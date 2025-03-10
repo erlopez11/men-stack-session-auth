@@ -27,7 +27,9 @@ app.use(morgan('dev'));
 
 //Mount Routes
 
-
+app.get('/', (req, res) => {
+    res.render('index.ejs');
+})
 
 
 //Tell App to Listen for HTTP requests
